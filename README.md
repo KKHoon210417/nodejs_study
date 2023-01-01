@@ -19,7 +19,6 @@ this is a repository for learning node.js
 - 페이지에 새로운 HTML을 추가하거나 기존 HTML, 스타일을 수정할 수 있다.
 - 마우스 클릭이나 포인터의 움직임, 키모드 키 눌림 등과 같은 사용자 행동에 반응.
 - 네트워크를 통해 원격 서버에 요청을 보내거나, 파일 다운로드, 업로드
-- 
 
 
 
@@ -133,3 +132,31 @@ const [x, y, , , z] = arr;
 ```
 
 ### 프로토타입
+
+
+### REPL(Read, Evaluate, Pring, Loop)
+프롬프트에서 node를 입력해서 사용하는 방식을 REPL이라고 한다.
+(한 줄짜리 코드를 급하게 실행해야할 때 사용하곤 한다.)
+
+
+### 모듈
+- 모듈로 만드는 방법
+```
+// node 방식
+module.exports = {
+    내가 모듈로 만들기 원하는 변수 or 객체 등
+}
+
+// javascript 방식
+export default 함수명
+```
+
+- 모듈을 가져다 쓰는 방법
+```
+// node 방식
+const { 내가 가져다 쓰기 원하는 변수 또는 객체 } = require('내가 가져다 쓰기 원하는 모듈');
+
+// javascript 방식
+import { 내가 가져다 쓰기 원하는 변수 또는 객체 } from '내가 가져다 쓰기 원하는 모듈';
+```
+
